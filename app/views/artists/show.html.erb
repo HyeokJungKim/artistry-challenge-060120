@@ -1,0 +1,15 @@
+<h1>
+   <%= @artist.name %>
+</h1>
+
+<h2>
+    <%= @artist.title %>
+</h2>
+
+<ul>
+    <% @artist.instruments.each do |instrument_instance| %>
+        <li>
+            <%= instrument_instance.name %>
+        </li>
+    <% end %>
+</ul>
